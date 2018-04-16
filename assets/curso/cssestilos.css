@@ -31,7 +31,7 @@ main {
   grid-template-rows: 1fr 12fr 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 2vh;
-  grid-template-areas: ". header header header header header header header botones botones botones ." ". contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido ." ". footer footer footer footer footer footer footer footer footer footer .";
+  grid-template-areas: ". header header header header header header header botones botones botones ." ". contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido ."  ". footer footer footer footer footer footer footer footer footer footer .";
   justify-content: center; }
 
 /* div {
@@ -42,4 +42,10 @@ main {
   position: fixed;
   padding-left: 305px; }
 
-/*# sourceMappingURL=estilos.css.map */
+p {
+  background-color: blue; }
+
+a {
+  color: red; }
+
+/*# sourceMappingURL=cssestilos.css.map */
