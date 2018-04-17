@@ -14,8 +14,13 @@ header {
 article {
     grid-area: contenido;
     display: flex;
-    justify-content: center;
+    //display: contents;
     /* font-size: 1.4em; */
+}
+
+article iframe
+{
+    flex-grow: 1;
 }
 
 footer {
@@ -28,12 +33,12 @@ footer {
 }
 
 main {
-    max-height: 100vh;
+    //max-height: 100vh;
     padding-left: 300px;
     display: -ms-inline-grid;
     display: grid;
     grid-template-columns: 1fr repeat(10, 5fr) 1fr;
-    grid-template-rows: 1fr 12fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 2vh;
     grid-template-areas: ". header header header header header header header botones botones botones ." ". contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido ." ". footer footer footer footer footer footer footer footer footer footer .";
