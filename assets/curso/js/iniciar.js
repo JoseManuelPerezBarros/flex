@@ -16,3 +16,8 @@ console.log(iframe.contentWindow.document.documentElement.offsetHeight);
 let altura = iframe.contentWindow.document.body.scrollHeight;
 document.querySelector('article').height = altura;
 iframe.height = altura; */
+
+//https://www.silocreativo.com/category/disenoweb/
+
+let contenido = iframe.contentDocument.getElementsByClassName('contenido')[0];
+contenedor.appendChild(contenido);

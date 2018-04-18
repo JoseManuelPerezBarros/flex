@@ -10,8 +10,16 @@ article {
   display: flex;
 }
 
-article iframe {
+.contenido {
+  font-size: 16px;
   flex-grow: 1;
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 1.8;
+}
+
+iframe {
+  display: none;
 }
 
 footer {
@@ -24,13 +32,11 @@ footer {
 
 main {
   background-color: whitesmoke;
-  padding-left: 400px;
+  padding-left: 300px;
   display: -ms-inline-grid;
   display: grid;
-  grid-template-columns: 1fr repeat(10, 5fr) 1fr;
-  grid-template-rows: 1fr auto 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-template-columns: 2fr repeat(10, 5fr) 1fr;
+  grid-template-rows: auto 29fr 1fr;
   grid-template-areas: ". header header header header header header header botones botones botones ." ". contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido ." ". footer footer footer footer footer footer footer footer footer footer .";
   justify-content: center;
 }

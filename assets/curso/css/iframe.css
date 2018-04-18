@@ -5,7 +5,7 @@ main {
   grid-template-areas: "header header header header header header header header botones botones botones botones" "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido";
 }
 
-article {
+.contenido {
   grid-area: contenido;
   text-align: justify;
 }
