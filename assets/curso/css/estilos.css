@@ -33,7 +33,6 @@ main {
   grid-row-gap: 10px;
   grid-template-areas: ". header header header header header header header botones botones botones ." ". contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido ." ". footer footer footer footer footer footer footer footer footer footer .";
   justify-content: center;
-  align-content: end;
 }
 
 .sidenav-trigger {
