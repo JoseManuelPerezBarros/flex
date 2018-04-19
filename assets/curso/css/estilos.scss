@@ -1,9 +1,7 @@
-// header,
-// article,
-// footer,
-// .botones {
-//     //border: 1px solid red;
-// }
+body
+{
+	background-color: whitesmoke; 
+}
 header {
 	grid-area: header;
 	display: flex;
@@ -21,20 +19,18 @@ article {
 // 	flex-grow: 1;
 // 	align-items: stretch;
 // }
-
-.contenido{
+.contenido {
 	font-size: 16px;
 	flex-grow: 1;
 	text-align: justify;
 	text-indent: 30px;
 	line-height: 1.8;
-	
 }
+
 // .contenido::first-letter
 // {
 // 	font-size: 3em;
 // }
-
 iframe {
 	display: none
 }
@@ -48,12 +44,12 @@ footer {
 }
 
 main {
-	background-color: whitesmoke; //max-height: 100vh;
+	//background-color: whitesmoke; //max-height: 100vh;
 	padding-left: 300px;
 	display: -ms-inline-grid;
 	display: grid;
 	grid-template-columns: 2fr repeat(10, 5fr) 1fr;
-	grid-template-rows: auto 29fr 1fr; //grid-template-rows: 1fr 10fr 1fr;
+	grid-template-rows: auto auto auto; //grid-template-rows: 1fr 10fr 1fr;
 	//grid-column-gap: 10px;
 	//grid-row-gap: 10px;
 	grid-template-areas: ". header header header header header header header botones botones botones ." ". contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido ." ". footer footer footer footer footer footer footer footer footer footer .";
@@ -68,3 +64,35 @@ main {
 	position: fixed;
 	padding-left: 305px;
 }
+
+// .centro {
+// 	position: relative;
+// 	left: 750px;
+// 	top: 100px;
+// 	height: 1px;
+// 	width: 1px;
+// 	visibility: hidden;
+// 	background-color: red;
+// 	z-index: 99;
+// 	animation-timing-function: linear;
+// 	animation-duration: 5s;
+// 	animation-name: giro;
+// 	animation-iteration-count: infinite;
+// }
+// .pelota {
+// 	visibility: visible;
+// 	position: absolute;
+// 	width: 30px;
+// 	height: 30px;
+// 	background-color: green;
+// 	z-index: 98;
+// 	border-radius: 50%;
+// }
+// @keyframes giro {
+// 	from { 
+// 	 transform: rotate(0deg);
+// 	}
+// 	to { 
+// 		transform: rotate(360deg);
+// 	}
+//   }
