@@ -22,12 +22,19 @@ let contenido = iframe.contentDocument.getElementsByClassName('contenido')[0];
 contenedor.appendChild(contenido);
 
 window.addEventListener('load', () => {
-    
+    if (innerWidth <= 992) {
+        document.getElementsByTagName('main')[0].style.paddingLeft = '0px';
+        document.getElementsByClassName('sidenav-trigger')[0].style.paddingLeft = '5px';
+    }
+
+
     window.addEventListener('resize', () => {
         if (innerWidth <= 992) {
             document.getElementsByTagName('main')[0].style.paddingLeft = '0px';
+            document.getElementsByClassName('sidenav-trigger')[0].style.paddingLeft = '5px';
         } else {
             document.getElementsByTagName('main')[0].style.paddingLeft = '300px';
+            document.getElementsByClassName('sidenav-trigger')[0].style.paddingLeft = '305px';
             if (document.querySelector('.sidenav-overlay').style.display == 'block') {
                 document.querySelector('.sidenav-overlay').style.display = 'none';
                 document.querySelector('.sidenav-overlay').style.opacity = '0';
@@ -41,11 +48,13 @@ window.addEventListener('load', () => {
         if (slide.isOpen) {
             slide.close();
             document.getElementsByTagName('main')[0].style.paddingLeft = '0px';
+            document.getElementsByClassName('sidenav-trigger')[0].style.paddingLeft = '5px';
         } else if (!slide.isOpen && innerWidth <= 992) {
             slide.open();
         } else if (!slide.isOpen && innerWidth > 992) {
             slide.open();
             document.getElementsByTagName('main')[0].style.paddingLeft = '300px';
+            document.getElementsByClassName('sidenav-trigger')[0].style.paddingLeft = '305px';
         } else {
             console.error("Error")
         }
