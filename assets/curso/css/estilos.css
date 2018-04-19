@@ -32,6 +32,9 @@ footer {
 
 .botones {
   grid-area: botones;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 main {

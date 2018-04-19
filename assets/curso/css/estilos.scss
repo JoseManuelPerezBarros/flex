@@ -1,7 +1,7 @@
-body
-{
-	background-color: whitesmoke; 
+body {
+	background-color: whitesmoke;
 }
+
 header {
 	grid-area: header;
 	display: flex;
@@ -41,6 +41,9 @@ footer {
 
 .botones {
 	grid-area: botones;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 main {
