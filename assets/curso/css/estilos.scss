@@ -3,11 +3,11 @@ body {
 }
 
 iframe {
-	display: none
+	display: none;
 }
 
 main {
-	//background-color: whitesmoke; //max-height: 100vh;
+	//max-height: 100vh;
 	padding-left: 300px;
 	display: -ms-inline-grid;
 	display: grid;
@@ -27,20 +27,14 @@ main {
 		grid-area: contenido;
 		display: flex; //display: contents;
 		//font-size: 1.4em;
-	} // article iframe {
-	// 	flex-grow: 1;
-	// 	align-items: stretch;
-	// }
+	}
 	.contenido {
 		font-size: 16px;
 		flex-grow: 1;
 		text-align: justify;
 		text-indent: 30px;
 		line-height: 1.8;
-	} // .contenido::first-letter
-	// {
-	// 	font-size: 3em;
-	// }
+	}
 	footer {
 		grid-area: footer;
 	}
@@ -80,8 +74,10 @@ main {
 			background-color: rgba(0, 0, 0, 0.05);
 		}
 	}
-}
-
+} // article iframe {
+// 	flex-grow: 1;
+// 	align-items: stretch;
+// }
 // .centro {
 // 	position: relative;
 // 	left: 750px;

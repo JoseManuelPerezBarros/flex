@@ -56,3 +56,13 @@ function deepFreeze(obj) {
     return Object.freeze(obj);
 }
 deepFreeze(infocurso);
+
+/* class Curso {
+    constructor() {
+        this.activo = null;
+        this.temaCompletado = [];
+        this.temaProgreso = [];
+        this.numTemas = this.ordenayCuenta(this.temas, true);
+        this.indexTemas = 0;
+    }
+} */
