@@ -57,7 +57,7 @@ function deepFreeze(obj) {
 }
 deepFreeze(infocurso);
 
-/* class Curso {
+class Curso {
     constructor() {
         this.activo = null;
         this.temaCompletado = [];
@@ -65,4 +65,4 @@ deepFreeze(infocurso);
         this.numTemas = this.ordenayCuenta(this.temas, true);
         this.indexTemas = 0;
     }
-} */
+}
