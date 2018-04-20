@@ -2,39 +2,8 @@ body {
   background-color: whitesmoke;
 }
 
-header {
-  grid-area: header;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-article {
-  grid-area: contenido;
-  display: flex;
-}
-
-.contenido {
-  font-size: 16px;
-  flex-grow: 1;
-  text-align: justify;
-  text-indent: 30px;
-  line-height: 1.8;
-}
-
 iframe {
   display: none;
-}
-
-footer {
-  grid-area: footer;
-}
-
-.botones {
-  grid-area: botones;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 main {
@@ -46,10 +15,56 @@ main {
   grid-template-areas: ". header header header header header header header botones botones botones ." ". contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido ." ". footer footer footer footer footer footer footer footer footer footer .";
   justify-content: center;
 }
+main header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+main article {
+  grid-area: contenido;
+  display: flex;
+}
+main .contenido {
+  font-size: 16px;
+  flex-grow: 1;
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 1.8;
+}
+main footer {
+  grid-area: footer;
+}
+main .botones {
+  grid-area: botones;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 .sidenav-trigger {
   position: fixed;
   padding-left: 305px;
+}
+
+.sidenav-fixed {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  align-items: start;
+  align-content: start;
+}
+.sidenav-fixed li {
+  cursor: pointer;
+}
+.sidenav-fixed li a {
+  display: inline-block;
+}
+.sidenav-fixed li a:hover {
+  background-color: transparent;
+}
+.sidenav-fixed li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 /*# sourceMappingURL=estilos.css.map */

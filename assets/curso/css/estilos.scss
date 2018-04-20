@@ -2,48 +2,8 @@ body {
 	background-color: whitesmoke;
 }
 
-header {
-	grid-area: header;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
-
-article {
-	grid-area: contenido;
-	display: flex; //display: contents;
-	//font-size: 1.4em;
-}
-
-// article iframe {
-// 	flex-grow: 1;
-// 	align-items: stretch;
-// }
-.contenido {
-	font-size: 16px;
-	flex-grow: 1;
-	text-align: justify;
-	text-indent: 30px;
-	line-height: 1.8;
-}
-
-// .contenido::first-letter
-// {
-// 	font-size: 3em;
-// }
 iframe {
 	display: none
-}
-
-footer {
-	grid-area: footer;
-}
-
-.botones {
-	grid-area: botones;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
 }
 
 main {
@@ -57,6 +17,39 @@ main {
 	//grid-row-gap: 10px;
 	grid-template-areas: ". header header header header header header header botones botones botones ." ". contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido ." ". footer footer footer footer footer footer footer footer footer footer .";
 	justify-content: center; //align-content: end;
+	header {
+		grid-area: header;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	article {
+		grid-area: contenido;
+		display: flex; //display: contents;
+		//font-size: 1.4em;
+	} // article iframe {
+	// 	flex-grow: 1;
+	// 	align-items: stretch;
+	// }
+	.contenido {
+		font-size: 16px;
+		flex-grow: 1;
+		text-align: justify;
+		text-indent: 30px;
+		line-height: 1.8;
+	} // .contenido::first-letter
+	// {
+	// 	font-size: 3em;
+	// }
+	footer {
+		grid-area: footer;
+	}
+	.botones {
+		grid-area: botones;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 }
 
 // div {
@@ -66,6 +59,27 @@ main {
 .sidenav-trigger {
 	position: fixed;
 	padding-left: 305px;
+}
+
+.sidenav-fixed {
+	//position: fixed;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	align-items: start;
+	align-content: start;
+	li {
+		cursor: pointer;
+		a {
+			display: inline-block;
+			&:hover {
+				background-color: transparent;
+			}
+		}
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.05);
+		}
+	}
 }
 
 // .centro {
